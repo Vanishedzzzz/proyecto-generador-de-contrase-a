@@ -49,6 +49,30 @@
         android:layout_marginHorizontal="40dp"
         android:layout_marginTop="20dp" />
 
+    <!-- CheckBox para Mayúsculas -->
+    <CheckBox
+        android:id="@+id/checkBoxUppercase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Incluir mayúsculas"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"/>
+
+    <!-- CheckBox para Caracteres Especiales -->
+    <CheckBox
+        android:id="@+id/checkBoxSpecialChars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Incluir caracteres especiales"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxUppercase"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="40dp"/>
+
     <!-- Vista previa de la contraseña generada -->
     <TextView
         android:id="@+id/passwordPreview"
@@ -63,7 +87,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seekBar2" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxSpecialChars" />
 
     <!-- Botón para generar la contraseña -->
     <Button

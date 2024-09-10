@@ -6,20 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!-- Título SafeApp -->
-    <TextView
-        android:id="@+id/Titulo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:gravity="center"
-        android:text="SafeApp"
-        android:textSize="50sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <!-- Logo de la aplicación -->
+    <!-- Reemplaza con el nombre de tu imagen -->
 
-    <!-- Texto Login debajo del Título -->
+
+    <!-- Texto Login debajo del Logo -->
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="330dp"
+        android:layout_height="267dp"
+        android:src="@drawable/safeapp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="48dp"
+        tools:layout_editor_absoluteY="16dp" />
+
     <TextView
         android:id="@+id/textViewlogin"
         android:layout_width="wrap_content"
@@ -30,7 +34,7 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/Titulo" />
+        app:layout_constraintTop_toBottomOf="@id/logo" />
 
     <!-- TextView Usuario -->
     <TextView

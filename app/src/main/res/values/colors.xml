@@ -1,8 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Otros colores -->
-    <color name="colorAccent">#FF4081</color> <!-- Cambia este valor según tu esquema de colores -->
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <!-- Agrega otros colores aquí -->
+    <!-- Colores Base -->
+    <color name="colorPrimary">#000000</color> <!-- Negro para el color primario -->
+    <color name="colorPrimaryDark">#1c1c1c</color> <!-- Negro más oscuro para la barra de estado -->
+    <color name="colorAccent">#622337</color> <!-- Azul oscuro para acentos y botones -->
+
+    <!-- Colores Secundarios -->
+    <color name="colorBackground">#f4f4f4</color> <!-- Fondo gris claro para el fondo principal -->
+    <color name="colorTextPrimary">#1c1c1c</color> <!-- Texto principal en gris oscuro -->
+    <color name="colorTextSecondary">#4f4f4f</color> <!-- Texto secundario en gris medio -->
+    <color name="colorButtonBackground">#009900</color> <!-- Verde para botones -->
+
+    <!-- Colores para Alertas -->
+    <color name="colorWarning">#ff9900</color> <!-- Naranja para advertencias -->
 </resources>
