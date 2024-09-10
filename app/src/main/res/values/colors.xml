@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Otros colores -->
+    <color name="colorAccent">#FF4081</color> <!-- Cambia este valor según tu esquema de colores -->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <!-- Agrega otros colores aquí -->
+</resources>
