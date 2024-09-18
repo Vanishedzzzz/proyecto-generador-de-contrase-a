@@ -1,12 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!-- Logo de la app -->
     <ImageView
         android:id="@+id/logo"
         android:layout_width="330dp"
@@ -19,7 +18,6 @@
         android:layout_marginTop="48dp"
         tools:layout_editor_absoluteY="16dp" />
 
-    <!-- Título Login -->
     <TextView
         android:id="@+id/textViewlogin"
         android:layout_width="wrap_content"
@@ -32,7 +30,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/logo" />
 
-    <!-- Texto Usuario -->
+    <!-- TextView Usuario -->
     <TextView
         android:id="@+id/textViewUsuario"
         android:layout_width="wrap_content"
@@ -45,42 +43,38 @@
 
     <!-- EditText para el nombre de usuario -->
     <EditText
-        android:id="@+id/nombreEditText"
+        android:id="@+id/Nombre"
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginHorizontal="30dp"
         android:hint="Ingresa tu nombre"
-        android:contentDescription="Campo para ingresar el nombre de usuario"
-        android:importantForAccessibility="yes"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textViewUsuario"
         android:layout_marginTop="8dp" />
 
-    <!-- Texto Contraseña -->
+    <!-- TextView Contraseña -->
     <TextView
-        android:id="@+id/textViewContrasena"
+        android:id="@+id/textViewContraseña"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Contraseña"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/nombreEditText"
+        app:layout_constraintTop_toBottomOf="@id/Nombre"
         android:layout_marginTop="24dp" />
 
     <!-- EditText para la contraseña -->
     <EditText
-        android:id="@+id/contrasenaEditText"
+        android:id="@+id/Contrasena"
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginHorizontal="30dp"
-        android:hint="Ingresa tu contraseña"
-        android:contentDescription="Campo para ingresar la contraseña"
-        android:importantForAccessibility="yes"
         android:inputType="textPassword"
+        android:hint="Ingresa tu contraseña"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textViewContrasena"
+        app:layout_constraintTop_toBottomOf="@id/textViewContraseña"
         android:layout_marginTop="8dp" />
 
     <!-- Botón Registrarse (izquierda) -->
@@ -91,7 +85,7 @@
         android:text="Registrarse"
         app:layout_constraintEnd_toStartOf="@+id/buttonIniciarSesion"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/contrasenaEditText"
+        app:layout_constraintTop_toBottomOf="@id/Contrasena"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="32dp" />
 
@@ -103,7 +97,7 @@
         android:text="Iniciar sesión"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/Registrarse"
-        app:layout_constraintTop_toBottomOf="@id/contrasenaEditText"
+        app:layout_constraintTop_toBottomOf="@id/Contrasena"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="32dp" />
 
