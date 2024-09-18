@@ -6,12 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!-- Logo de la aplicación -->
-    <!-- Reemplaza con el nombre de tu imagen -->
-
-
-    <!-- Texto Login debajo del Logo -->
-
     <ImageView
         android:id="@+id/logo"
         android:layout_width="330dp"

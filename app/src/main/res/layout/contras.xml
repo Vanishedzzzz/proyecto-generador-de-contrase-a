@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PasswordManagerActivity">
+    tools:context=".PasswordGeneratorActivity">
 
     <!-- Encabezado: Contraseñas guardadas -->
     <TextView
@@ -20,7 +20,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <!-- Botón de búsqueda -->
-    <SearchView
+    <androidx.appcompat.widget.SearchView
         android:id="@+id/searchViewContraseñas"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -29,6 +29,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textViewContraseñasGuardadas" />
+
 
     <!-- ScrollView que contiene las contraseñas guardadas -->
     <ScrollView
