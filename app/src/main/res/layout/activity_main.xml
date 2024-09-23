@@ -4,14 +4,10 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_security"
     tools:context=".MainActivity">
 
     <!-- Logo de la aplicación -->
-    <!-- Reemplaza con el nombre de tu imagen -->
-
-
-    <!-- Texto Login debajo del Logo -->
-
     <ImageView
         android:id="@+id/logo"
         android:layout_width="330dp"
@@ -24,6 +20,7 @@
         android:layout_marginTop="48dp"
         tools:layout_editor_absoluteY="16dp" />
 
+    <!-- Texto Login debajo del Logo -->
     <TextView
         android:id="@+id/textViewlogin"
         android:layout_width="wrap_content"
@@ -32,6 +29,7 @@
         android:gravity="center"
         android:text="Login"
         android:textSize="20sp"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/logo" />
@@ -42,6 +40,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Usuario"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textViewlogin"
@@ -65,6 +64,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Contraseña"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/Nombre"
@@ -88,6 +88,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Registrarse"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorAccent"
         app:layout_constraintEnd_toStartOf="@+id/buttonIniciarSesion"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/Contrasena"
@@ -100,6 +102,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Iniciar sesión"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorAccent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/Registrarse"
         app:layout_constraintTop_toBottomOf="@id/Contrasena"
