@@ -24,7 +24,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="40dp"/>
 
-    <!-- Texto Largo de Contraseña -->
+    <!-- Texto "Largo de Contraseña" -->
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
@@ -41,13 +41,26 @@
         android:id="@+id/seekBar2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:max="12"
-        android:progress="0"
+        android:max="20"
+        android:progress="8"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginHorizontal="40dp"
         android:layout_marginTop="20dp" />
+
+    <!-- Texto que muestra el valor del largo seleccionado -->
+    <TextView
+        android:id="@+id/textViewLength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Largo de contraseña: 8"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp" />
 
     <!-- CheckBox para Mayúsculas -->
     <CheckBox
@@ -56,7 +69,7 @@
         android:layout_height="wrap_content"
         android:text="Incluir mayúsculas"
         android:textColor="#FFFFFF"
-        app:layout_constraintTop_toBottomOf="@+id/seekBar2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLength"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="20dp"
         android:layout_marginStart="40dp"/>
@@ -111,6 +124,32 @@
         android:textColor="#FFFFFF"
         android:background="@color/colorAccent"
         app:layout_constraintTop_toBottomOf="@+id/btnGenerate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <!-- Botón para guardar la contraseña -->
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar Contraseña"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorAccent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCopy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <!-- Botón para ir a las contraseñas guardadas -->
+    <Button
+        android:id="@+id/btnViewSavedPasswords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver Contraseñas Guardadas"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorAccent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSave"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="20dp" />

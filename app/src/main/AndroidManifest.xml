@@ -25,9 +25,13 @@
             android:name=".RegisterActivity"
             android:exported="true" />
 
-        <!-- Añade esta actividad -->
         <activity
             android:name=".PasswordGeneratorActivity"
+            android:exported="true" />
+
+        <!-- Añade esta actividad -->
+        <activity
+            android:name=".ContrasActivity"
             android:exported="true" />
     </application>
 
