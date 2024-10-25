@@ -68,10 +68,12 @@ public class PasswordGeneratorActivity extends AppCompatActivity {
             }
 
             @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {}
+            public void onStartTrackingTouch(SeekBar seekBar) {
+            }
 
             @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {}
+            public void onStopTrackingTouch(SeekBar seekBar) {
+            }
         });
 
         // Botón para generar la contraseña
@@ -121,8 +123,8 @@ public class PasswordGeneratorActivity extends AppCompatActivity {
         Button buttonSave = dialog.findViewById(R.id.buttonSave);
 
         buttonSave.setOnClickListener(v -> {
+            String name = editTextName.getText().toString().trim();
             String password = passwordPreview.getText().toString();
-            String name = editTextName.getText().toString();
             if (!name.isEmpty() && !password.isEmpty()) {
                 Intent intent = new Intent(PasswordGeneratorActivity.this, ContrasActivity.class);
                 intent.putExtra("name", name);
