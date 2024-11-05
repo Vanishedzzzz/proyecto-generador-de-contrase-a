@@ -12,7 +12,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -83,15 +82,50 @@ public class ContrasActivity extends AppCompatActivity {
         passwordTextView.setTextSize(16);
         passwordTextView.setTextColor(ContextCompat.getColor(this, android.R.color.darker_gray));
 
-        // Agregar los TextViews al contenedor
+        // Botón de edición
+        Button btnEdit = new Button(this);
+        btnEdit.setText("Editar");
+        btnEdit.setOnClickListener(v -> {
+            // Lógica para editar la contraseña aquí
+            editPassword(name, password);
+        });
+
+        // Botón de eliminación
+        Button btnDelete = new Button(this);
+        btnDelete.setText("Borrar");
+        btnDelete.setOnClickListener(v -> {
+            // Lógica para eliminar la contraseña aquí
+            deletePassword(name, password);
+            layoutContras.removeView(passwordContainer); // Elimina la vista del layout
+        });
+
+        // Agregar los TextViews y botones al contenedor
         passwordContainer.addView(nameTextView);
         passwordContainer.addView(passwordTextView);
+        passwordContainer.addView(btnEdit);
+        passwordContainer.addView(btnDelete);
 
         // Agregar el contenedor de la contraseña al layout principal
         layoutContras.addView(passwordContainer);
 
         // Agregar la contraseña a la lista
         passwordsList.add(name + ":" + password);
+    }
+
+    // Método para editar una contraseña
+    private void editPassword(String name, String oldPassword) {
+        // Aquí puedes abrir un diálogo para ingresar la nueva contraseña y luego actualizar
+        Toast.makeText(this, "Funcionalidad de editar en construcción", Toast.LENGTH_SHORT).show();
+    }
+
+    // Método para eliminar una contraseña
+    private void deletePassword(String name, String password) {
+        passwordsList.remove(name + ":" + password);
+        String updatedPasswords = "";
+        for (String entry : passwordsList) {
+            updatedPasswords += entry + ";";
+        }
+        sharedPreferences.edit().putString("passwords", updatedPasswords).apply();
     }
 
     // Método para copiar todas las contraseñas al portapapeles
